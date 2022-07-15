@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>Sorting Algorithms Project</title>
+</head>
+
+<body class="dark" >
+    <header class="header">
+        <h1 class="title">sorting algorithms</h1>
+    </header>
+    
+    <main class="main">
+        <aside class="side-bar">
+            <div class="slider-container">
+                <input type="range" min="10" max="100" value="20" class="slider" step="10" id="elements-slider">
+                <p> <span id="slider-output"></span></p>
+            </div>
+            <div class="button" id="shuffle-elements">shuffle</div>
+            <div class="button enable-button" id="quick-sort">Quick Sort</div>
+            <div class="button disable-button" id="merge-sort">Merge Sort</div>
+            <div class="button disable-button" id="heap-sort">Heap Sort</div>
+            <div class="button" id="toggle-theme">theme</div>
+            
+        </aside>
+        <div class="sort-container">
+            <div class="bar" ></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        made by etienne. github
+    </footer>
+
+    <script src="Js/dark-mode.js"></script>
+    <script src="Js/main.js"></script>
+    <script src="Js/slider.js"></script>
+</body>
+
+</html>
