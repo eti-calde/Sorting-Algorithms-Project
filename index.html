@@ -22,20 +22,23 @@
     </header>
     
     <main class="main">
-        <aside class="side-bar">
-            <div class="slider-container">
+        <aside id="side-bar" class="side-bar">
+            <div  class="slider-container">
                 <input type="range" min="10" max="100" value="20" class="slider" step="10" id="elements-slider">
                 <p> <span id="slider-output"></span></p>
             </div>
-            <div class="button" id="shuffle-elements">shuffle</div>
-            <div class="button enable-button" id="quick-sort">Quick Sort</div>
-            <div class="button disable-button" id="merge-sort">Merge Sort</div>
-            <div class="button disable-button" id="heap-sort">Heap Sort</div>
+            <div class="shuffle-play-container">
+                <div class="button" id="shuffle-elements">shuffle</div>
+                <div class="button" id="play">play</div>
+            </div>
+            <div class="button enable-button" id="quick-sort">quick sort</div>
+            <div class="button disable-button" id="merge-sort">merge sort</div>
+            <div class="button disable-button" id="heap-sort">heap sort</div>
             <div class="button" id="toggle-theme">theme</div>
             
         </aside>
         <div class="sort-container">
-            <div class="bar" ></div>
+            <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
@@ -46,12 +49,10 @@
 
 
     <footer class="footer">
-        made by etienne. github
+        made by etienne. github 
     </footer>
 
-    <script src="Js/dark-mode.js"></script>
     <script src="Js/main.js"></script>
-    <script src="Js/slider.js"></script>
 </body>
 
 </html>

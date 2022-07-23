@@ -30,17 +30,23 @@ body.dark {
 }
 
 body.white {
-  --text-color: #444;
-  --backgr-color: floralwhite;
-  --first-color: #888;
-  --second-color: rgb(190, 190, 190);
+  --text-color: #2b2b2b;
+  --backgr-color: #FCF8E8;
+  --first-color: #D5D2C6;
+  --second-color: #D3D3D3;
+  --third-color:#AAAAAA;
+  --fourth-color:#A8EF7F;
+  --fifth-color: #C67FEF;
 }
-
+/* FEA3FA  5F3D5E*/
 body.colorful {
-  --text-color: #ff8496;
-  --backgr-color: #8080ec;
-  --first-color: #80b8f6;
-  --second-color: #ff8496;
+  --text-color: #5F3D5E;
+  --backgr-color: #A7A3FE;
+  --first-color: #FFC6FC;
+  --second-color: #8884f4;
+  --third-color: #a788da;
+  --fourth-color:#DFBAF7;
+  --fifth-color: #6C4E99;
 }
 
 .header{
@@ -55,19 +61,38 @@ body.colorful {
   text-align: center;
 }
 
+.link{
+  display: inline;
+}
 
 .button{
   /* border: solid 0.2rem var(--second-color); */
   padding: 1rem;
   background-color: var(--first-color);
-  border-radius: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
 }
 
+.button::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0.5rem;
+  background-color: var(--fifth-color);
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+}
 
-
-
+.button:hover::before,
+.button:focus::before{
+  transform:scaleX(1);
+}
 
 
 
@@ -129,6 +154,11 @@ body.colorful {
 
 }
 
+.shuffle-play-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 .footer {
   text-align: center;
   background-color: var(--second-color);
@@ -154,7 +184,7 @@ body.colorful {
   border: solid 2px deeppink;
   background-color: var(--fifth-color);
   width: 2rem;
-  height: 4rem;
+  height: 2%;
   margin-bottom: 4rem;
 
 }
